@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.1.32407.343
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PathfinderList", "PathfinderList.csproj", "{5C495D14-6EBC-4B9B-8C67-D314FDDDD1F8}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CharacterList", "CharacterList\CharacterList.csproj", "{0EAE5E2F-9E70-40DB-9351-1D8C34B54B89}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DiceRoll", "DiceRoll\DiceRoll.csproj", "{9CA5AB0B-13C6-4105-B95F-0E40C49B0050}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,10 +13,14 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{5C495D14-6EBC-4B9B-8C67-D314FDDDD1F8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{5C495D14-6EBC-4B9B-8C67-D314FDDDD1F8}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{5C495D14-6EBC-4B9B-8C67-D314FDDDD1F8}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{5C495D14-6EBC-4B9B-8C67-D314FDDDD1F8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0EAE5E2F-9E70-40DB-9351-1D8C34B54B89}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0EAE5E2F-9E70-40DB-9351-1D8C34B54B89}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0EAE5E2F-9E70-40DB-9351-1D8C34B54B89}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0EAE5E2F-9E70-40DB-9351-1D8C34B54B89}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9CA5AB0B-13C6-4105-B95F-0E40C49B0050}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9CA5AB0B-13C6-4105-B95F-0E40C49B0050}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9CA5AB0B-13C6-4105-B95F-0E40C49B0050}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9CA5AB0B-13C6-4105-B95F-0E40C49B0050}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -11,18 +11,20 @@
  *  You should have received a copy of the GNU General Public License along with Foobar. 
     If not, see <https://www.gnu.org/licenses/>. */
 
+using System;
+using System.Collections.Generic;
+using System.Configuration;
+using System.Data;
+using System.Linq;
+using System.Threading.Tasks;
 using System.Windows;
 
-namespace PathfinderList
+namespace CharacterList
 {
     /// <summary>
-    /// Interaction logic for MainWindow.xaml
+    /// Interaction logic for App.xaml
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class App : Application
     {
-        public MainWindow()
-        {
-            InitializeComponent();
-        }
     }
 }

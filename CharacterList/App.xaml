@@ -1,7 +1,7 @@
-﻿<Application x:Class="PathfinderList.App"
+﻿<Application x:Class="CharacterList.App"
              xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-             xmlns:local="clr-namespace:PathfinderList"
+             xmlns:local="clr-namespace:CharacterList"
              StartupUri="MainWindow.xaml">
     <Application.Resources>
          
