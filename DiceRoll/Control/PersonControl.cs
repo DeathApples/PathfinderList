@@ -9,11 +9,12 @@ namespace DiceRoll.Control
 
         public static int Level => Person.Level;
         public static int Heroism => Person.Heroism;
+        public static int ArmorClass => Person.ArmorClass;
         public static string Name => Person.Name;
         public static string Class => Person.Class;
         public static string Race => Person.Race;
 
-        private static PersonInformation Person { get; }
+        private static PersonInformation Person;
 
         static PersonControl()
         {
@@ -26,10 +27,15 @@ namespace DiceRoll.Control
             {
                 case InformationType.Level:
                     Person.Level = (int)value;
+                    ChangeLevel?.Invoke();
                     break;
 
                 case InformationType.Heroism:
                     Person.Heroism = (int)value;
+                    break;
+
+                case InformationType.ArmorClass:
+                    Person.ArmorClass = (int)value;
                     break;
 
                 case InformationType.Name:
@@ -44,14 +50,13 @@ namespace DiceRoll.Control
                     Person.Race = (string)value;
                     break;
             }
-
-            ChangeLevel.Invoke();
         }
 
         public enum InformationType
         {
             Level,
             Heroism,
+            ArmorClass,
             Name,
             Class,
             Race

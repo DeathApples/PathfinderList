@@ -58,6 +58,28 @@ namespace DiceRoll.Control
             Will.Score = PersonControl.Level + AbilityControl.Wisdom.Modifier + (int)Will.SkillLevel + Will.Item;
         }
 
+        public static void Check(ThrowType type)
+        {
+            switch (type)
+            {
+                case ThrowType.Perception:
+                    StringFormation.CreateMessage(Checks.RollType.d20, Perception.Score, "Проверка Восприятия");
+                    break;
+
+                case ThrowType.Fortitude:
+                    StringFormation.CreateMessage(Checks.RollType.d20, Fortitude.Score, "Спасбросок Стойкости");
+                    break;
+
+                case ThrowType.Reflex:
+                    StringFormation.CreateMessage(Checks.RollType.d20, Reflex.Score, "Спасбросок Рефлекса");
+                    break;
+
+                case ThrowType.Will:
+                    StringFormation.CreateMessage(Checks.RollType.d20, Will.Score, "Спасбросок Мудрости");
+                    break;
+            }
+        }
+
         public enum ThrowType
         {
             Perception,

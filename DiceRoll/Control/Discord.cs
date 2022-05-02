@@ -15,19 +15,19 @@ using System.IO;
 using System.Net;
 using Newtonsoft.Json;
 
-namespace DiceRoll.Controller
+namespace DiceRoll.Control
 {
     public class Discord
     {
-        private string Username;
         private string Color;
+        private string Username;
 
         private WebRequest Request;
 
         public Discord(string username, string webhook, string color)
         {
-            Username = username;
             Color = color;
+            Username = username;
 
             Request = (HttpWebRequest)WebRequest.Create(webhook);
             Request.ContentType = "application/json";

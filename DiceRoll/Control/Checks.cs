@@ -11,34 +11,34 @@ namespace DiceRoll.Control
             random = new Random();
         }
 
-        public static int Roll(DiceRollType type)
+        public static (string, int) Roll(RollType type)
         {
             switch (type)
             {
-                case DiceRollType.d4:
-                    return random.Next(1, 4);
+                case RollType.d4:
+                    return ("d4", random.Next(1, 4));
 
-                case DiceRollType.d6:
-                    return random.Next(1, 6);
+                case RollType.d6:
+                    return ("d6", random.Next(1, 6));
 
-                case DiceRollType.d8:
-                    return random.Next(1, 8);
+                case RollType.d8:
+                    return ("d8", random.Next(1, 8));
 
-                case DiceRollType.d10:
-                    return random.Next(1, 10);
+                case RollType.d10:
+                    return ("d10", random.Next(1, 10));
 
-                case DiceRollType.d12:
-                    return random.Next(1, 12);
+                case RollType.d12:
+                    return ("d12", random.Next(1, 12));
 
-                case DiceRollType.d20:
-                    return random.Next(1, 20);
+                case RollType.d20:
+                    return ("d20", random.Next(1, 20));
 
                 default:
-                    return random.Next(1, 100);
+                    return ("d100", random.Next(1, 100));
             }
         }
 
-        public enum DiceRollType
+        public enum RollType
         {
             d4,
             d6,
